@@ -1,0 +1,3 @@
+[submodule "spring-restful-services"]
+	path = spring-restful-services
+	url = git@github.com:olakunlebalogun/spring.io-projects.git
