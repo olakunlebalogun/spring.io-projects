@@ -1,13 +1,15 @@
-package com.olakunle.springrestfulservices;
+package com.olakunle.springrestfulservices.assembler;
 
 import static org.springframework.hateoas.server.mvc.WebMvcLinkBuilder.*;
 
+import com.olakunle.springrestfulservices.controller.EmployeeController;
+import com.olakunle.springrestfulservices.entity.Employee;
 import org.springframework.hateoas.EntityModel;
 import org.springframework.hateoas.server.RepresentationModelAssembler;
 import org.springframework.stereotype.Component;
 
 @Component
-class EmployeeModelAssembler implements RepresentationModelAssembler<Employee, EntityModel<Employee>> {
+public class EmployeeModelAssembler implements RepresentationModelAssembler<Employee, EntityModel<Employee>> {
 
     @Override
     public EntityModel<Employee> toModel(Employee employee) {
